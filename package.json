@@ -48,12 +48,11 @@
     "react-dom": "^16.4.2"
   },
   "scripts": {
-    "build": "NODE_ENV=production babel src -d dist",
+    "build": "babel src -d dist",
     "storybook": "start-storybook -p 9009 -c stories",
     "build-docs": "cd stories && yarn install && cd .. && build-storybook -c stories -o docs",
     "deploy-docs": "gh-pages -d docs",
     "preversion": "yarn build",
-    "postpublish": "yarn build-docs && yarn deploy-docs",
-    "postintall": "cd node_modules/mui-downshift && npm install && npm run build"
+    "postpublish": "yarn build-docs && yarn deploy-docs"
   }
 }
