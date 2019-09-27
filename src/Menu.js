@@ -1,5 +1,11 @@
 import React, { Component } from 'react';
-import { List as VirtualList, InfiniteLoader, AutoSizer, CellMeasurer, CellMeasurerCache } from 'react-virtualized';
+
+import { List } from 'react-virtualized/dist/commonjs/List';
+import { InfiniteLoader } from 'react-virtualized/dist/commonjs/InfiniteLoader';
+import { AutoSizer } from 'react-virtualized/dist/commonjs/AutoSizer';
+import { CellMeasurer } from 'react-virtualized/dist/commonjs/CellMeasurer';
+import { CellMeasurerCache } from 'react-virtualized/dist/commonjs/CellMeasurerCache';
+
 import classnames from 'classnames';
 import Paper from '@material-ui/core/Paper';
 import Popper from '@material-ui/core/Popper';
